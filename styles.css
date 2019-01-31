@@ -1,0 +1,182 @@
+/* app */
+* {
+  box-sizing: border-box;
+}
+
+.noteAssembler {
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: [c1] 15% [c2] 45% [c3] 40%;
+  grid-template-rows: [r1] 5% [r2] 15% [r3] 45% [r4] 30% [r5] 5%;
+  grid-template-areas: "title info ." "teams subjective ." "patients objective ." "patients assessment ." ". generate .";
+}
+
+/* shared styles */
+.clickable {
+  cursor: pointer;
+}
+
+.soapHeader {
+  color: darkgrey;
+  border-bottom: 1px dotted darkgrey;
+  margin-bottom: 5px;
+}
+
+/* shared components */
+.confirmationModal {
+  margin: 20px 5px 0 0;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.confirmationModal .message {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.confirmationModal .buttons {
+  margin: 10px 0;
+}
+
+.confirmationModal .buttons button {
+  margin: 0 5px;
+}
+
+.formButtons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.formButtons button, .generateButtons button {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid black;
+  margin-right: 30px;
+  box-shadow: 5px 5px;
+}
+
+/* title */
+.mainTitle {
+  grid-area: title;
+  font-size: 24px;
+}
+
+/* TeamSelector */
+.teamSelector {
+  grid-area: teams;
+  border-right: 2px solid black;
+  padding: 20px;
+}
+
+/* PatientsList */
+.patientsList {
+  grid-area: patients;
+  border-right: 2px solid black;
+}
+
+.patients {
+  margin: 10px 0;
+}
+
+.patients .patient {
+  display: inline-block;
+  border: 1px solid black;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 2px;
+  width: 100px;
+}
+
+/* CurrentInfo */
+.currentInfo {
+  grid-area: info;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+/* Subjective */
+.subjective {
+  grid-area: subjective;
+  padding: 20px;
+}
+
+.subjective .title {
+
+}
+
+.subjective .text {
+
+}
+
+/* Objective */
+.objective {
+  grid-area: objective;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.objective .vitals {
+}
+
+.objective .fromCraft {
+}
+
+.objective .exam {
+}
+
+.objective .labs .unreviewed {
+}
+
+.objective .labs .sticky {
+}
+
+/* Assessment */
+.assessment {
+  grid-area: assessment;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.assessment .commentsBox {
+  grid-area: comments;
+}
+
+.assessment .comments {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.assessment .noteSelector {
+  grid-area: notes;
+  padding-bottom: 10px;
+}
+
+.assessment .noteForm {
+  grid-area: note;
+}
+
+.assessment .noteForm .DraftEditor-editorContainer {
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+}
+
+.assessment .noteForm .noteBox {
+  border: 1px solid black;
+}
+
+/* GenerateButtons */
+.generateButtons {
+  grid-area: generate;
+  display: flex;
+  padding: 20px;
+}

@@ -1,0 +1,71 @@
+{
+  "comments": [
+    {
+      "commentId": 1,
+      "patient": 1,
+      "effectiveDateTime": "7/7/18 14:00",
+      "assessor": "Eugene",
+      "summary": "Patient with some constipation today"
+    },
+    {
+      "commentId": 2,
+      "patient": 1,
+      "effectiveDateTime": "7/8/18 13:00",
+      "assessor": "Mike",
+      "summary": "Patient with no BM after miralax"
+    },
+    {
+      "commentId": 3,
+      "patient": 2,
+      "effectiveDateTime": "7/8/18 09:00",
+      "assessor": "Ralph",
+      "summary": "[ ] write for Kayexelate"
+    }
+  ],
+  "notes": [
+    {
+      "noteId": 1,
+      "pid": 1,
+      "date": "8/13",
+      "text": "a bunch of text"
+    },
+    {
+      "noteId": 2,
+      "pid": 1,
+      "date": "8/14",
+      "text": "whatever you say"
+    },
+    {
+      "noteId": 3,
+      "pid": 2,
+      "date": "8/15",
+      "text": "yeah yeah yeah"
+    },
+    {
+      "noteId": 4,
+      "pid": 3,
+      "date": "8/16",
+      "text": "A/P: 45F PMH DM CHF, HTN who p/w worsening SOB, likely CHF exacerbation #CHF Exacerbation"
+    }
+  ],
+  "patients": [
+    {
+      "patientId": 1,
+      "name": "Victor",
+      "hospital": "UCSF",
+      "room": "A123"
+    },
+    {
+      "patientId": 2,
+      "name": "Erin",
+      "hospital": "TJU",
+      "room": "op24"
+    },
+    {
+      "patientId": 3,
+      "name": "Nathan",
+      "hospital": "BCH",
+      "room": "ONC-942"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "_components": {
+    "CommentsBox": "top",
+    "CurrentInfo": false,
+    "FormButtons": false,
+    "NoteBox": "bottom",
+    "NotesList": false,
+    "PatientSelector": false
+  },
+  "components": [
+    "CommentsBox", "NoteBox"
+  ],
+  "_comment": "user can specify desired components from an available list
+    Simple algorithm lays out page in a sensible grid based on size of components
+    just using true / false to indicate existence.
+    Or user can specify approximate location of component on screen.
+    Or a combination of the two.
+    TODO"
+}
